@@ -3,15 +3,17 @@
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
+  <h1>Who Are You?</h1>
 
   {{> hello}}
   {{> info}}
 </body>
 
 <template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+  <p> Language: {{data.lang}}</P>
+  <p> OS: {{data.os}}</P>
+  <p> IP: {{data.ip}}</P>
+
 </template>
 
 <template name="info">
@@ -21,5 +23,7 @@
     <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
     <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
     <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
+    <li><a href="https://www.freecodecamp.com">Free Code Camp</a></li>
+    <li><a href="https://www.freecodecamp.com/challenges/request-header-parser-microservice">Current Assignment</a></li>
   </ul>
 </template>
